@@ -1,0 +1,11 @@
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\bin\Debug\kafe_otomasyonu.exe.config
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\bin\Debug\kafe_otomasyonu.exe
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\bin\Debug\kafe_otomasyonu.pdb
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\YmgOtomasyon.csproj.AssemblyReference.cache
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\YmgOtomasyon.csproj.SuggestedBindingRedirects.cache
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\pansiyonkayıt_otomasyonu.Form1.resources
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\kafe_otomasyonu.Properties.Resources.resources
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\YmgOtomasyon.csproj.GenerateResource.cache
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\YmgOtomasyon.csproj.CoreCompileInputs.cache
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\kafe_otomasyonu.exe
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060\Yeni klasör (5)\kafe_otomasyonu\obj\Debug\kafe_otomasyonu.pdb

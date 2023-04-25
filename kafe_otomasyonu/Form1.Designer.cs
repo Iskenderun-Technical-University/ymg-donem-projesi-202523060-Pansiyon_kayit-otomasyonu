@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -37,19 +38,21 @@
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Yellow;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(624, 292);
+            this.button1.Location = new System.Drawing.Point(338, 248);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(236, 64);
+            this.button1.Size = new System.Drawing.Size(147, 60);
             this.button1.TabIndex = 0;
             this.button1.Text = "GİRİŞ";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Yellow;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(469, 136);
+            this.label1.Location = new System.Drawing.Point(129, 142);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(157, 24);
             this.label1.TabIndex = 1;
@@ -58,7 +61,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(650, 131);
+            this.textBox1.Location = new System.Drawing.Point(314, 137);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(189, 29);
             this.textBox1.TabIndex = 2;
@@ -66,8 +69,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Yellow;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(549, 218);
+            this.label2.Location = new System.Drawing.Point(211, 200);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 24);
             this.label2.TabIndex = 3;
@@ -76,7 +80,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(650, 213);
+            this.textBox2.Location = new System.Drawing.Point(314, 195);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(189, 29);
             this.textBox2.TabIndex = 4;
@@ -85,12 +89,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 516);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(677, 599);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
+            this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "ADMİN GİRİŞ";
             this.Load += new System.EventHandler(this.Form1_Load);
