@@ -1,4 +1,5 @@
-﻿using System;
+﻿using pansiyonkayıt_otomasyonu;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -8,22 +9,20 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace pansiyonkayıt_otomasyonu
+namespace kafe_otomasyonu
 {
-    public partial class Form1 : System.Windows.Forms.Form
+    public partial class Form3 : Form
     {
-        public Form1()
+        public Form3()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void button2_Click(object sender, EventArgs e)
         {
+            Form1 fr = new Form1();
+            fr.Show();
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
 
         }
     }

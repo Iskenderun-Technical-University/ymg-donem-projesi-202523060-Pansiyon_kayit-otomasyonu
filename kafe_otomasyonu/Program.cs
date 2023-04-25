@@ -16,7 +16,7 @@ namespace pansiyonkayıt_otomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new kafe_otomasyonu.Form2());
         }
     }
 }
