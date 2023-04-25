@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace kafe_otomasyonu
+namespace pansiyonkayıt_otomasyonu
 {
     internal static class Program
     {
