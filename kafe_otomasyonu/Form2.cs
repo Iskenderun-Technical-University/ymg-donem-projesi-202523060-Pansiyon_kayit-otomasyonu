@@ -8,9 +8,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Data.Sql;
 
 
-namespace kafe_otomasyonu
+namespace pansiyonkayıt_otomasyonu
 {
     public partial class Form2 : Form
 

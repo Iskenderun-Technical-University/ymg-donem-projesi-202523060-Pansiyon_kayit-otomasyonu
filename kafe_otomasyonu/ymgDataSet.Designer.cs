@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace kafe_otomasyonu {
+namespace pansiyonkayıt_otomasyonu {
     
     
     /// <summary>
@@ -791,7 +791,7 @@ namespace kafe_otomasyonu {
         }
     }
 }
-namespace kafe_otomasyonu.ymgDataSetTableAdapters {
+namespace pansiyonkayıt_otomasyonu.ymgDataSetTableAdapters {
     
     
     /// <summary>
@@ -946,7 +946,7 @@ namespace kafe_otomasyonu.ymgDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitConnection() {
             this._connection = new global::System.Data.SqlClient.SqlConnection();
-            this._connection.ConnectionString = global::kafe_otomasyonu.Properties.Settings.Default.ymgConnectionString;
+            this._connection.ConnectionString = global::pansiyonkayıt_otomasyonu.Properties.Settings.Default.ymgConnectionString;
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]

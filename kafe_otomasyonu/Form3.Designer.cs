@@ -1,4 +1,4 @@
-﻿namespace kafe_otomasyonu
+﻿namespace pansiyonkayıt_otomasyonu
 {
     partial class Form3
     {

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace kafe_otomasyonu.Properties {
+namespace pansiyonkayıt_otomasyonu.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
