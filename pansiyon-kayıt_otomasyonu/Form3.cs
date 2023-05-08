@@ -25,5 +25,11 @@ namespace pansiyonkayıt_otomasyonu
 
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 fr = new Form2();
+            fr.Show();
+        }
     }
 }
