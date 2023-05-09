@@ -36,21 +36,14 @@ namespace pansiyonkayıt_otomasyonu
         {
             //olusturdugumuz veri tabanına musteri ekleriz
             con = new SqlConnection(SqlCon);
-            string sql = "insert into Table_2 ([AdSoyad],[TC],[Mail],[TelNo],[GirisTarihi],[CıkısTarihi],[Ucret],[OdaNo]) values (@isim,@tc,@mail,@tel,@giris,@cıkıs,@ucret,@oda)";
+            string sql = "insert into Table_2 ([AdSoyad],[TC],[Mail],[TelNo],[GirisTarihi],[CıkısTarihi],[Ucret],[OdaNo]) values ('" + textBox1.Text + "','" + textBox2.Text + "','" + textBox3.Text + "','" + maskedTextBox1.Text + "', '" + dateTimePicker1.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + dateTimePicker2.Value.ToString("yyyy-MM-dd HH:mm:ss") + "','" + textBox4.Text + "','" + textBox5.Text + "')";
             cmd = new SqlCommand();
-            cmd.Parameters.AddWithValue("@isim", textBox1.Text);
-            cmd.Parameters.AddWithValue("@tc", textBox2.Text);
-            cmd.Parameters.AddWithValue("@mail", textBox3.Text);
-            cmd.Parameters.AddWithValue("@tel", textBox6.Text);
-            cmd.Parameters.AddWithValue("@giris",dateTimePicker1.Text);
-            cmd.Parameters.AddWithValue("@cıkıs", dateTimePicker2.Text);
-            cmd.Parameters.AddWithValue("@ucret", textBox4.Text);
-            cmd.Parameters.AddWithValue("@oda", textBox5.Text);
             con.Open();
             cmd.Connection = con;
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
             con.Close();
+            MessageBox.Show("Musteri kaydı olusturuldu...");
         }
 
         private void button2_Click(object sender, EventArgs e)

@@ -21,6 +21,7 @@ namespace pansiyonkayıt_otomasyonu
         private void button2_Click(object sender, EventArgs e)
         {
             Form1 fr = new Form1();
+            this.Hide();
             fr.Show();
 
 
