@@ -43,7 +43,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -58,12 +57,14 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox
             // 
+            this.groupBox.Controls.Add(this.textBox6);
             this.groupBox.Controls.Add(this.label9);
             this.groupBox.Controls.Add(this.button1);
             this.groupBox.Controls.Add(this.textBox5);
@@ -77,7 +78,6 @@
             this.groupBox.Controls.Add(this.label6);
             this.groupBox.Controls.Add(this.label5);
             this.groupBox.Controls.Add(this.label4);
-            this.groupBox.Controls.Add(this.maskedTextBox1);
             this.groupBox.Controls.Add(this.label3);
             this.groupBox.Controls.Add(this.label2);
             this.groupBox.Controls.Add(this.textBox1);
@@ -199,14 +199,6 @@
             this.label4.Size = new System.Drawing.Size(138, 24);
             this.label4.TabIndex = 5;
             this.label4.Text = "TELEFON NO:";
-            // 
-            // maskedTextBox1
-            // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(165, 210);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(163, 29);
-            this.maskedTextBox1.TabIndex = 4;
             // 
             // label3
             // 
@@ -361,6 +353,13 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(165, 210);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(163, 29);
+            this.textBox6.TabIndex = 18;
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -395,7 +394,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox1;
@@ -412,5 +410,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox textBox6;
     }
 }

@@ -8,18 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
-using System.Data.Sql;
 
 
 namespace pansiyonkayıt_otomasyonu
 {
     public partial class Form2 : Form
-
-       
     {
-        
+        SqlConnection con;
+        SqlDataAdapter da;
+        SqlDataReader dr;
+        SqlCommand cmd;
+        DataSet ds;
 
-        //public static string SqlCon = @"Data Source=LAPTOP-EAS3BIR0\SQLEXPRESS;Initial Catalog = ymg; Integrated Security = True";
+        public static string SqlCon = @"Data Source=LAPTOP-EAS3BIR0\SQLEXPRESS;Initial Catalog = ymg; Integrated Security = True";
 
         public Form2()
         {
@@ -27,11 +28,29 @@ namespace pansiyonkayıt_otomasyonu
         }
 
         
+        
+
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
-               
+            //olusturdugumuz veri tabanına musteri ekleriz
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_2 ([AdSoyad],[TC],[Mail],[TelNo],[GirisTarihi],[CıkısTarihi],[Ucret],[OdaNo]) values (@isim,@tc,@mail,@tel,@giris,@cıkıs,@ucret,@oda)";
+            cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@isim", textBox1.Text);
+            cmd.Parameters.AddWithValue("@tc", textBox2.Text);
+            cmd.Parameters.AddWithValue("@mail", textBox3.Text);
+            cmd.Parameters.AddWithValue("@tel", textBox6.Text);
+            cmd.Parameters.AddWithValue("@giris",dateTimePicker1.Text);
+            cmd.Parameters.AddWithValue("@cıkıs", dateTimePicker2.Text);
+            cmd.Parameters.AddWithValue("@ucret", textBox4.Text);
+            cmd.Parameters.AddWithValue("@oda", textBox5.Text);
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)

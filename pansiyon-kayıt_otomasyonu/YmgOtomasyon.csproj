@@ -71,6 +71,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ymgDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ymgDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ymgDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ymgDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ymgDataSet11.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -108,6 +118,28 @@
     </None>
     <None Include="ymgDataSet.xss">
       <DependentUpon>ymgDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet1.xsc">
+      <DependentUpon>ymgDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ymgDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ymgDataSet1.xss">
+      <DependentUpon>ymgDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet11.xsc">
+      <DependentUpon>ymgDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ymgDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ymgDataSet11.xss">
+      <DependentUpon>ymgDataSet11.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

@@ -30,6 +30,7 @@ namespace pansiyonkayıt_otomasyonu
         {
             Form2 fr = new Form2();
             fr.Show();
+           
         }
     }
 }
