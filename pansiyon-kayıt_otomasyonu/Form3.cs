@@ -37,7 +37,10 @@ namespace pansiyonkayıt_otomasyonu
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
+            Form4 fr = new Form4();
+            this.Hide();
+            fr.Show();
 
 
         }

@@ -10,7 +10,7 @@
 
 #pragma warning disable 1591
 
-namespace kafe_otomasyonu {
+namespace pansiyonkayıt_otomasyonu {
     
     
     /// <summary>
@@ -805,7 +805,7 @@ namespace kafe_otomasyonu {
         }
     }
 }
-namespace kafe_otomasyonu.ymgDataSet1TableAdapters {
+namespace pansiyonkayıt_otomasyonu.ymgDataSet1TableAdapters {
     
     
     /// <summary>

@@ -8,13 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace kafe_otomasyonu
+namespace pansiyonkayıt_otomasyonu
 {
     public partial class Form4 : Form
     {
         public Form4()
         {
             InitializeComponent();
+        }
+
+        private void Form4_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

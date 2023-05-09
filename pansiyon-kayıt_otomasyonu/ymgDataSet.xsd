@@ -55,30 +55,30 @@
   <xs:element name="ymgDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="ymgDataSet" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="ymgDataSet">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="MUSTERİ" msprop:Generator_RowClassName="MUSTERİRow" msprop:Generator_RowEvHandlerName="MUSTERİRowChangeEventHandler" msprop:Generator_RowDeletedName="MUSTERİRowDeleted" msprop:Generator_RowDeletingName="MUSTERİRowDeleting" msprop:Generator_RowEvArgName="MUSTERİRowChangeEvent" msprop:Generator_TablePropName="MUSTERİ" msprop:Generator_RowChangedName="MUSTERİRowChanged" msprop:Generator_UserTableName="MUSTERİ" msprop:Generator_RowChangingName="MUSTERİRowChanging" msprop:Generator_TableClassName="MUSTERİDataTable" msprop:Generator_TableVarName="tableMUSTERİ">
+        <xs:element name="MUSTERİ" msprop:Generator_RowEvHandlerName="MUSTERİRowChangeEventHandler" msprop:Generator_RowDeletedName="MUSTERİRowDeleted" msprop:Generator_RowDeletingName="MUSTERİRowDeleting" msprop:Generator_RowEvArgName="MUSTERİRowChangeEvent" msprop:Generator_TablePropName="MUSTERİ" msprop:Generator_RowChangedName="MUSTERİRowChanged" msprop:Generator_UserTableName="MUSTERİ" msprop:Generator_RowChangingName="MUSTERİRowChanging" msprop:Generator_RowClassName="MUSTERİRow" msprop:Generator_TableClassName="MUSTERİDataTable" msprop:Generator_TableVarName="tableMUSTERİ">
           <xs:complexType>
             <xs:sequence>
-              <xs:element name="MusteriID" msprop:Generator_UserColumnName="MusteriID" msprop:Generator_ColumnPropNameInTable="MusteriIDColumn" msprop:Generator_ColumnPropNameInRow="MusteriID" msprop:Generator_ColumnVarNameInTable="columnMusteriID" type="xs:int" />
-              <xs:element name="Adi_x0020_soyadi" msprop:Generator_UserColumnName="Adi soyadi" msprop:Generator_ColumnPropNameInTable="Adi_soyadiColumn" msprop:Generator_ColumnPropNameInRow="Adi_soyadi" msprop:Generator_ColumnVarNameInTable="columnAdi_soyadi">
+              <xs:element name="MusteriID" msprop:Generator_ColumnPropNameInTable="MusteriIDColumn" msprop:Generator_ColumnPropNameInRow="MusteriID" msprop:Generator_UserColumnName="MusteriID" msprop:Generator_ColumnVarNameInTable="columnMusteriID" type="xs:int" />
+              <xs:element name="Adi_x0020_soyadi" msprop:Generator_ColumnPropNameInTable="Adi_soyadiColumn" msprop:Generator_ColumnPropNameInRow="Adi_soyadi" msprop:Generator_UserColumnName="Adi soyadi" msprop:Generator_ColumnVarNameInTable="columnAdi_soyadi">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="TC" msprop:Generator_UserColumnName="TC" msprop:Generator_ColumnPropNameInTable="TCColumn" msprop:Generator_ColumnPropNameInRow="TC" msprop:Generator_ColumnVarNameInTable="columnTC" type="xs:int" />
-              <xs:element name="Mail" msprop:Generator_UserColumnName="Mail" msprop:Generator_ColumnPropNameInTable="MailColumn" msprop:Generator_ColumnPropNameInRow="Mail" msprop:Generator_ColumnVarNameInTable="columnMail">
+              <xs:element name="TC" msprop:Generator_ColumnPropNameInTable="TCColumn" msprop:Generator_ColumnPropNameInRow="TC" msprop:Generator_UserColumnName="TC" msprop:Generator_ColumnVarNameInTable="columnTC" type="xs:int" />
+              <xs:element name="Mail" msprop:Generator_ColumnPropNameInTable="MailColumn" msprop:Generator_ColumnPropNameInRow="Mail" msprop:Generator_UserColumnName="Mail" msprop:Generator_ColumnVarNameInTable="columnMail">
                 <xs:simpleType>
                   <xs:restriction base="xs:string">
                     <xs:maxLength value="50" />
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
-              <xs:element name="Telefon_x0020_no" msprop:Generator_UserColumnName="Telefon no" msprop:Generator_ColumnPropNameInTable="Telefon_noColumn" msprop:Generator_ColumnPropNameInRow="Telefon_no" msprop:Generator_ColumnVarNameInTable="columnTelefon_no" type="xs:int" />
-              <xs:element name="Giris_x0020_tarihi" msprop:Generator_UserColumnName="Giris tarihi" msprop:Generator_ColumnPropNameInTable="Giris_tarihiColumn" msprop:Generator_ColumnPropNameInRow="Giris_tarihi" msprop:Generator_ColumnVarNameInTable="columnGiris_tarihi" type="xs:dateTime" />
-              <xs:element name="Cikis_x0020_tarihi" msprop:Generator_UserColumnName="Cikis tarihi" msprop:Generator_ColumnPropNameInTable="Cikis_tarihiColumn" msprop:Generator_ColumnPropNameInRow="Cikis_tarihi" msprop:Generator_ColumnVarNameInTable="columnCikis_tarihi" type="xs:dateTime" />
-              <xs:element name="Ucret" msprop:Generator_UserColumnName="Ucret" msprop:Generator_ColumnPropNameInTable="UcretColumn" msprop:Generator_ColumnPropNameInRow="Ucret" msprop:Generator_ColumnVarNameInTable="columnUcret" type="xs:int" />
-              <xs:element name="Oda_x0020_no" msprop:Generator_UserColumnName="Oda no" msprop:Generator_ColumnPropNameInTable="Oda_noColumn" msprop:Generator_ColumnPropNameInRow="Oda_no" msprop:Generator_ColumnVarNameInTable="columnOda_no" type="xs:int" />
+              <xs:element name="Telefon_x0020_no" msprop:Generator_ColumnPropNameInTable="Telefon_noColumn" msprop:Generator_ColumnPropNameInRow="Telefon_no" msprop:Generator_UserColumnName="Telefon no" msprop:Generator_ColumnVarNameInTable="columnTelefon_no" type="xs:int" />
+              <xs:element name="Giris_x0020_tarihi" msprop:Generator_ColumnPropNameInTable="Giris_tarihiColumn" msprop:Generator_ColumnPropNameInRow="Giris_tarihi" msprop:Generator_UserColumnName="Giris tarihi" msprop:Generator_ColumnVarNameInTable="columnGiris_tarihi" type="xs:dateTime" />
+              <xs:element name="Cikis_x0020_tarihi" msprop:Generator_ColumnPropNameInTable="Cikis_tarihiColumn" msprop:Generator_ColumnPropNameInRow="Cikis_tarihi" msprop:Generator_UserColumnName="Cikis tarihi" msprop:Generator_ColumnVarNameInTable="columnCikis_tarihi" type="xs:dateTime" />
+              <xs:element name="Ucret" msprop:Generator_ColumnPropNameInTable="UcretColumn" msprop:Generator_ColumnPropNameInRow="Ucret" msprop:Generator_UserColumnName="Ucret" msprop:Generator_ColumnVarNameInTable="columnUcret" type="xs:int" />
+              <xs:element name="Oda_x0020_no" msprop:Generator_ColumnPropNameInTable="Oda_noColumn" msprop:Generator_ColumnPropNameInRow="Oda_no" msprop:Generator_UserColumnName="Oda no" msprop:Generator_ColumnVarNameInTable="columnOda_no" type="xs:int" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>
