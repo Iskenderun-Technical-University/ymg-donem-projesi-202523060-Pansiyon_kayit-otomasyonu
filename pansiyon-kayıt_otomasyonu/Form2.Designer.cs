@@ -86,7 +86,7 @@
             this.groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox.Location = new System.Drawing.Point(512, 12);
             this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(469, 482);
+            this.groupBox.Size = new System.Drawing.Size(472, 478);
             this.groupBox.TabIndex = 0;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Musteri bilgileri";
@@ -102,7 +102,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(346, 442);
+            this.label9.Location = new System.Drawing.Point(392, 349);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(20, 24);
             this.label9.TabIndex = 17;
@@ -111,7 +111,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(188, 433);
+            this.button1.Location = new System.Drawing.Point(344, 420);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 43);
             this.button1.TabIndex = 14;
@@ -255,7 +255,7 @@
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(119, 500);
+            this.groupBox1.Location = new System.Drawing.Point(119, 481);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(871, 185);
             this.groupBox1.TabIndex = 1;
@@ -365,7 +365,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(21, 635);
+            this.button11.Location = new System.Drawing.Point(22, 567);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(77, 50);
             this.button11.TabIndex = 2;
@@ -380,7 +380,7 @@
             this.BackColor = System.Drawing.Color.Yellow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1029, 708);
+            this.ClientSize = new System.Drawing.Size(1088, 672);
             this.Controls.Add(this.button11);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox);

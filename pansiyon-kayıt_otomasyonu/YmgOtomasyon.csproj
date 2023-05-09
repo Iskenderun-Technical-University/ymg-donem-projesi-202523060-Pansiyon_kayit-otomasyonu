@@ -87,6 +87,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ymgDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ymgDataSetBase.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
