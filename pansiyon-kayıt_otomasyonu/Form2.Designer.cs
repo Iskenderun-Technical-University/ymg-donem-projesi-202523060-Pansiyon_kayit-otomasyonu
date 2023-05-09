@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.groupBox = new System.Windows.Forms.GroupBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
@@ -57,7 +58,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.button11 = new System.Windows.Forms.Button();
             this.groupBox.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -83,12 +84,20 @@
             this.groupBox.Controls.Add(this.textBox1);
             this.groupBox.Controls.Add(this.label1);
             this.groupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox.Location = new System.Drawing.Point(487, 12);
+            this.groupBox.Location = new System.Drawing.Point(512, 12);
             this.groupBox.Name = "groupBox";
-            this.groupBox.Size = new System.Drawing.Size(412, 482);
+            this.groupBox.Size = new System.Drawing.Size(469, 482);
             this.groupBox.TabIndex = 0;
             this.groupBox.TabStop = false;
             this.groupBox.Text = "Musteri bilgileri";
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(164, 210);
+            this.maskedTextBox1.Mask = "(999) 000-0000";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(163, 29);
+            this.maskedTextBox1.TabIndex = 19;
             // 
             // label9
             // 
@@ -246,7 +255,7 @@
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(28, 488);
+            this.groupBox1.Location = new System.Drawing.Point(119, 500);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(871, 185);
             this.groupBox1.TabIndex = 1;
@@ -353,13 +362,16 @@
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // maskedTextBox1
+            // button11
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(164, 210);
-            this.maskedTextBox1.Mask = "(999) 000-0000";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(163, 29);
-            this.maskedTextBox1.TabIndex = 19;
+            this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button11.Location = new System.Drawing.Point(21, 635);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(77, 50);
+            this.button11.TabIndex = 2;
+            this.button11.Text = "Geri";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // Form2
             // 
@@ -368,7 +380,8 @@
             this.BackColor = System.Drawing.Color.Yellow;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(939, 687);
+            this.ClientSize = new System.Drawing.Size(1029, 708);
+            this.Controls.Add(this.button11);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.groupBox);
             this.DoubleBuffered = true;
@@ -412,5 +425,6 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button button11;
     }
 }

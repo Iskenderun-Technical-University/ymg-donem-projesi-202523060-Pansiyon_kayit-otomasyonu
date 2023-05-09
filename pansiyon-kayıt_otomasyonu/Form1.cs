@@ -17,13 +17,22 @@ namespace pansiyonkayıt_otomasyonu
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        
         private void button1_Click(object sender, EventArgs e)
         {
+            if (textBox1.Text == "admin" && textBox2.Text == "sinem")
+            {
+                Form3 fr = new Form3();
+                fr.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Giris hatalı...");
+                textBox1.Clear();
+                textBox2.Clear();
+            }
+
 
         }
     }

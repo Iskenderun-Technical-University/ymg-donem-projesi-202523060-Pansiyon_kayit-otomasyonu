@@ -84,6 +84,7 @@
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(565, 298);
             this.textBox2.Name = "textBox2";
+            this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(189, 29);
             this.textBox2.TabIndex = 4;
             // 
@@ -115,7 +116,6 @@
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Text = "ADMİN GİRİŞ";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

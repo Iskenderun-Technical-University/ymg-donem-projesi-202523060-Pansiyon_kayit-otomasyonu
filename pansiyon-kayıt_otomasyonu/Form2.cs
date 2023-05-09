@@ -44,6 +44,18 @@ namespace pansiyonkayıt_otomasyonu
             cmd.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("Musteri kaydı olusturuldu...");
+
+            textBox1.Clear();
+            textBox2.Clear();
+            textBox3.Clear();
+            textBox4.Clear();
+            textBox5.Clear();
+            maskedTextBox1.Clear();
+            
+
+
+
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -101,6 +113,13 @@ namespace pansiyonkayıt_otomasyonu
             label9.Text = Sonuc.TotalDays.ToString();
             Ucret = Convert.ToInt32(label9.Text) * 50;//gunluk pansiyon fiyatı 50 tl olsun.
             textBox4.Text = Ucret.ToString();
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            Form3 fr = new Form3();
+            this.Hide();
+            fr.Show();
         }
     }
 }
