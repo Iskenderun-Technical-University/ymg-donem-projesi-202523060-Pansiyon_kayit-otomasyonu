@@ -70,6 +70,12 @@
     <Compile Include="Form4.Designer.cs">
       <DependentUpon>Form4.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.cs">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ymgDataSet.Designer.cs">
@@ -87,6 +93,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ymgDataSet11.xsd</DependentUpon>
     </Compile>
+    <Compile Include="ymgDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ymgDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ymgDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ymgDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ymgDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ymgDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="ymgDataSetBase.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -99,6 +120,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form4.resx">
       <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -151,6 +175,39 @@
     </None>
     <None Include="ymgDataSet11.xss">
       <DependentUpon>ymgDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet2.xsc">
+      <DependentUpon>ymgDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ymgDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ymgDataSet2.xss">
+      <DependentUpon>ymgDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet3.xsc">
+      <DependentUpon>ymgDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ymgDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ymgDataSet3.xss">
+      <DependentUpon>ymgDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet4.xsc">
+      <DependentUpon>ymgDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="ymgDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>ymgDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="ymgDataSet4.xss">
+      <DependentUpon>ymgDataSet4.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
