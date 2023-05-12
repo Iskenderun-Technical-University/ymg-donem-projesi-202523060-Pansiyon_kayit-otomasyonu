@@ -30,12 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ymgDataSet3 = new pansiyonkayıt_otomasyonu.ymgDataSet3();
-            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.table_1TableAdapter = new pansiyonkayıt_otomasyonu.ymgDataSet3TableAdapters.Table_1TableAdapter();
-            this.ymgDataSet4 = new pansiyonkayıt_otomasyonu.ymgDataSet4();
-            this.table2BindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.table_2TableAdapter = new pansiyonkayıt_otomasyonu.ymgDataSet4TableAdapters.Table_2TableAdapter();
             this.musteriIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adSoyadDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tCDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,6 +39,12 @@
             this.cıkısTarihiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ucretDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.odaNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.table2BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.ymgDataSet4 = new pansiyonkayıt_otomasyonu.ymgDataSet4();
+            this.ymgDataSet3 = new pansiyonkayıt_otomasyonu.ymgDataSet3();
+            this.table1BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.table_1TableAdapter = new pansiyonkayıt_otomasyonu.ymgDataSet3TableAdapters.Table_1TableAdapter();
+            this.table_2TableAdapter = new pansiyonkayıt_otomasyonu.ymgDataSet4TableAdapters.Table_2TableAdapter();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -66,11 +66,13 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table2BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ymgDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ymgDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ymgDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table2BindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -93,34 +95,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(945, 138);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // ymgDataSet3
-            // 
-            this.ymgDataSet3.DataSetName = "ymgDataSet3";
-            this.ymgDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // table1BindingSource
-            // 
-            this.table1BindingSource.DataMember = "Table_1";
-            this.table1BindingSource.DataSource = this.ymgDataSet3;
-            // 
-            // table_1TableAdapter
-            // 
-            this.table_1TableAdapter.ClearBeforeFill = true;
-            // 
-            // ymgDataSet4
-            // 
-            this.ymgDataSet4.DataSetName = "ymgDataSet4";
-            this.ymgDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // table2BindingSource
-            // 
-            this.table2BindingSource.DataMember = "Table_2";
-            this.table2BindingSource.DataSource = this.ymgDataSet4;
-            // 
-            // table_2TableAdapter
-            // 
-            this.table_2TableAdapter.ClearBeforeFill = true;
             // 
             // musteriIDDataGridViewTextBoxColumn
             // 
@@ -177,10 +151,38 @@
             this.odaNoDataGridViewTextBoxColumn.HeaderText = "OdaNo";
             this.odaNoDataGridViewTextBoxColumn.Name = "odaNoDataGridViewTextBoxColumn";
             // 
+            // table2BindingSource
+            // 
+            this.table2BindingSource.DataMember = "Table_2";
+            this.table2BindingSource.DataSource = this.ymgDataSet4;
+            // 
+            // ymgDataSet4
+            // 
+            this.ymgDataSet4.DataSetName = "ymgDataSet4";
+            this.ymgDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // ymgDataSet3
+            // 
+            this.ymgDataSet3.DataSetName = "ymgDataSet3";
+            this.ymgDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // table1BindingSource
+            // 
+            this.table1BindingSource.DataMember = "Table_1";
+            this.table1BindingSource.DataSource = this.ymgDataSet3;
+            // 
+            // table_1TableAdapter
+            // 
+            this.table_1TableAdapter.ClearBeforeFill = true;
+            // 
+            // table_2TableAdapter
+            // 
+            this.table_2TableAdapter.ClearBeforeFill = true;
+            // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(649, 12);
+            this.button2.Location = new System.Drawing.Point(648, 7);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 36);
             this.button2.TabIndex = 2;
@@ -191,7 +193,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(798, 12);
+            this.button3.Location = new System.Drawing.Point(798, 7);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 36);
             this.button3.TabIndex = 3;
@@ -202,20 +204,22 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(432, 7);
+            this.button4.Location = new System.Drawing.Point(339, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(194, 41);
+            this.button4.Size = new System.Drawing.Size(197, 33);
             this.button4.TabIndex = 4;
             this.button4.Text = "Müşteri Ara";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // textBox6
             // 
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(107, 12);
+            this.textBox6.Location = new System.Drawing.Point(3, 8);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(302, 29);
             this.textBox6.TabIndex = 5;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // maskedTextBox1
             // 
@@ -375,12 +379,22 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.textBox6);
+            this.panel1.Controls.Add(this.button4);
+            this.panel1.Location = new System.Drawing.Point(28, 7);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(594, 41);
+            this.panel1.TabIndex = 37;
+            // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
             this.ClientSize = new System.Drawing.Size(943, 456);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.textBox5);
@@ -398,8 +412,6 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.dataGridView1);
@@ -407,10 +419,12 @@
             this.Text = "Form5";
             this.Load += new System.EventHandler(this.Form5_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.table2BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ymgDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ymgDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.table1BindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ymgDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.table2BindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -455,5 +469,6 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

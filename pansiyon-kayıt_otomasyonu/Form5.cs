@@ -22,6 +22,7 @@ namespace pansiyonkayıt_otomasyonu
         SqlCommand cmd;
         DataSet ds;
         public static string SqlCon = @"Data Source=LAPTOP-EAS3BIR0\SQLEXPRESS;Initial Catalog = ymg; Integrated Security = True";
+        public string SqlSorgu;
 
         public Form5()
         {
@@ -91,6 +92,24 @@ namespace pansiyonkayıt_otomasyonu
             Form3 a = new Form3();
             this.Hide();
             a.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            con = new SqlConnection(SqlCon);
+            string Sql = "select * from Table_2 where [AdSoyad] like '%" +textBox6.Text+"%'";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = Sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+            SqlSorgu= "select * from Table_2 where [AdSoyad] like '%" + textBox6.Text + "%'";
         }
     }
 }
