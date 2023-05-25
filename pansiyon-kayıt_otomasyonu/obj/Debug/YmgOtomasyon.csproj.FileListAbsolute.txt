@@ -91,3 +91,4 @@ C:\Users\sinem\source\repos\ymg-donem-projesi-202523060-Pansiyon_kayit-otomasyon
 C:\Users\sinem\source\repos\ymg-donem-projesi-202523060-Pansiyon_kayit-otomasyonu\pansiyon_kayıt-otomasyonu\pansiyon-kayıt_otomasyonu\obj\Debug\YmgOtomasyon.csproj.CoreCompileInputs.cache
 C:\Users\sinem\source\repos\ymg-donem-projesi-202523060-Pansiyon_kayit-otomasyonu\pansiyon_kayıt-otomasyonu\pansiyon-kayıt_otomasyonu\obj\Debug\pansiyonkayıt_otomasyonu.exe
 C:\Users\sinem\source\repos\ymg-donem-projesi-202523060-Pansiyon_kayit-otomasyonu\pansiyon_kayıt-otomasyonu\pansiyon-kayıt_otomasyonu\obj\Debug\pansiyonkayıt_otomasyonu.pdb
+C:\Users\sinem\source\repos\ymg-donem-projesi-202523060-Pansiyon_kayit-otomasyonu\pansiyon_kayıt-otomasyonu\pansiyon-kayıt_otomasyonu\obj\Debug\pansiyonkayıt_otomasyonu.Form6.resources

@@ -261,6 +261,7 @@
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ODA NUMARALARI";
+            
             // 
             // button10
             // 
@@ -387,6 +388,7 @@
             this.DoubleBuffered = true;
             this.Name = "Form2";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();
             this.groupBox1.ResumeLayout(false);

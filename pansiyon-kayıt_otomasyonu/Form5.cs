@@ -64,7 +64,7 @@ namespace pansiyonkayıt_otomasyonu
             cmd.ExecuteNonQuery();
 
             con.Close();
-            //GridDoldur();
+            
 
             textBox1.Clear();
             textBox2.Clear();
@@ -94,22 +94,8 @@ namespace pansiyonkayıt_otomasyonu
             a.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            con = new SqlConnection(SqlCon);
-            string Sql = "select * from Table_2 where [AdSoyad] like '%" +textBox6.Text+"%'";
-            cmd = new SqlCommand();
-            con.Open();
-            cmd.Connection = con;
-            cmd.CommandText = Sql;
-            cmd.ExecuteNonQuery();
-            con.Close();
+        
 
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-            SqlSorgu= "select * from Table_2 where [AdSoyad] like '%" + textBox6.Text + "%'";
-        }
+    
     }
 }
