@@ -69,43 +69,118 @@ namespace pansiyonkayıt_otomasyonu
             cmd.CommandText = sql;
             cmd.ExecuteNonQuery();
             con.Close();
+            if (button2.Text != "101")
+            {
+                button2.Enabled = false;
+            }
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             textBox5.Text = "102";
-           
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_102([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            if (button3.Text != "102")
+            {
+                button3.Enabled = false;
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             textBox5.Text = "103";
-            
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_103([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            if (button4.Text != "103")
+            {
+                button4.Enabled = false;
+            }
+
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             textBox5.Text = "104";
-            
-         
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_104([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            if (button5.Text != "104")
+            {
+                button5.Enabled = false;
+            }
+
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             textBox5.Text = "105";
-          
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_105([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            if (button6.Text != "105")
+            {
+                button6.Enabled = false;
+            }
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             textBox5.Text = "106";
-         
-            
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_106([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            if (button7.Text != "106")
+            {
+                button7.Enabled = false;
+            }
+
+
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             textBox5.Text = "107";
+            con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_107([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
+            con.Open();
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
+            con.Close();
+            if (button8.Text != "107")
+            {
+                button8.Enabled = false;
+            }
 
         }
         private void button9_Click(object sender, EventArgs e)
