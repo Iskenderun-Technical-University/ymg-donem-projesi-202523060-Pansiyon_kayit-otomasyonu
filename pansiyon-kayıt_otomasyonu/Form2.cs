@@ -62,100 +62,52 @@ namespace pansiyonkayıt_otomasyonu
         {
             textBox5.Text = "101";
             con = new SqlConnection(SqlCon);
+            string sql = "insert into Table_101([AdSoyad]) values ('" + textBox1.Text + "')";
+            cmd = new SqlCommand();
             con.Open();
-            SqlCommand komut1 = new SqlCommand("insert into 101([AdSoyad]) values ('" + textBox1.Text + "')", con);
-            SqlDataReader oku1 = komut1.ExecuteReader();
-            while (oku1.Read())
-            {
-                button7.Text = oku1["AdSoyad"].ToString();
-            }
+            cmd.Connection = con;
+            cmd.CommandText = sql;
+            cmd.ExecuteNonQuery();
             con.Close();
-
-
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             textBox5.Text = "102";
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            string sql = "insert into oda102 ([AdSoyad]) values ('" + textBox1.Text + "')";
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            con.Close();
+           
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             textBox5.Text = "103";
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            string sql = "insert into oda103 ([AdSoyad]) values ('" + textBox1.Text + "')";
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            con.Close();
+            
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
             textBox5.Text = "104";
             
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            string sql = "insert into oda104 ([AdSoyad]) values ('" + textBox1.Text + "')";
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            con.Close();
-            
+         
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
             textBox5.Text = "105";
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            string sql = "insert into oda105 ([AdSoyad]) values ('" + textBox1.Text + "')";
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            con.Close();
+          
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             textBox5.Text = "106";
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            SqlCommand komut6 = new SqlCommand("insert into oda106 ([AdSoyad]) values ('" + textBox1.Text + "')", con);
-            SqlDataReader oku6 = komut6.ExecuteReader();
-            while (oku6.Read())
-            {
-                button7.Text = oku6["AdSoyad"].ToString();
-            }
-            con.Close();
+         
             
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
             textBox5.Text = "107";
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            string sql = "insert into oda107 ([AdSoyad]) values ('" + textBox1.Text + "')";
-            cmd = new SqlCommand();
-            cmd.Connection = con;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
-            con.Close();
-        }
 
+        }
         private void button9_Click(object sender, EventArgs e)
         {
             MessageBox.Show("kırmızı renkli butonlar dolu odaları göstermektedir....");
@@ -187,9 +139,10 @@ namespace pansiyonkayıt_otomasyonu
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            //oda101
             con = new SqlConnection(SqlCon);
             con.Open();
-            SqlCommand komut1 = new SqlCommand("select * from 101", con);
+            SqlCommand komut1 = new SqlCommand("select * from Table_101", con);
             SqlDataReader oku1 = komut1.ExecuteReader();
             while (oku1.Read())
             {
@@ -199,11 +152,89 @@ namespace pansiyonkayıt_otomasyonu
             if (button2.Text != "101")
             {
                 button2.BackColor = Color.Red;
-                button2.Enabled = false;
             }
+            //oda102
+            con.Open();
+            SqlCommand komut2 = new SqlCommand("select * from Table_102", con);
+            SqlDataReader oku2 = komut2.ExecuteReader();
+            while (oku2.Read())
+            {
+                button3.Text = oku2["AdSoyad"].ToString();
+            }
+            con.Close();
+            if (button3.Text != "102")
+            {
+                button3.BackColor = Color.Red;
+            }
+            //oda103
+            con.Open();
+            SqlCommand komut3 = new SqlCommand("select * from Table_103", con);
+            SqlDataReader oku3 = komut3.ExecuteReader();
+            while (oku3.Read())
+            {
+                button4.Text = oku3["AdSoyad"].ToString();
+            }
+            con.Close();
+            if (button4.Text != "103")
+            {
+                button4.BackColor = Color.Red;
+            }
+            //oda104
+            con.Open();
+            SqlCommand komut4 = new SqlCommand("select * from Table_104", con);
+            SqlDataReader oku4 = komut4.ExecuteReader();
+            while (oku4.Read())
+            {
+                button5.Text = oku4["AdSoyad"].ToString();
+            }
+            con.Close();
+            if (button5.Text != "104")
+            {
+                button5.BackColor = Color.Red;
+            }
+            //oda105
+            con.Open();
+            SqlCommand komut5 = new SqlCommand("select * from Table_105", con);
+            SqlDataReader oku5 = komut5.ExecuteReader();
+            while (oku5.Read())
+            {
+                button6.Text = oku5["AdSoyad"].ToString();
+            }
+            con.Close();
+            if (button6.Text != "105")
+            {
+                button6.BackColor = Color.Red;
+            }
+            //oda106
+            con.Open();
+            SqlCommand komut6 = new SqlCommand("select * from Table_106", con);
+            SqlDataReader oku6 = komut6.ExecuteReader();
+            while (oku6.Read())
+            {
+                button7.Text = oku6["AdSoyad"].ToString();
+            }
+            con.Close();
+            if (button7.Text != "106")
+            {
+                button7.BackColor = Color.Red;
+            }
+            //oda107
+            con.Open();
+            SqlCommand komut7 = new SqlCommand("select * from Table_107", con);
+            SqlDataReader oku7 = komut7.ExecuteReader();
+            while (oku7.Read())
+            {
+                button8.Text = oku7["AdSoyad"].ToString();
+            }
+            con.Close();
+            if (button8.Text != "107")
+            {
+                button8.BackColor = Color.Red;
+            }
+
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void textBox5_TextChanged(object sender, EventArgs e)
         {
 
         }

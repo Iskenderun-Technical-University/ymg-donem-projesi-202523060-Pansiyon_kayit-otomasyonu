@@ -86,9 +86,9 @@
             this.ucretDataGridViewTextBoxColumn,
             this.odaNoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.table2BindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 329);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 324);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(945, 138);
+            this.dataGridView1.Size = new System.Drawing.Size(953, 154);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -178,7 +178,7 @@
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(308, 240);
+            this.button2.Location = new System.Drawing.Point(304, 254);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 36);
             this.button2.TabIndex = 2;
@@ -189,7 +189,7 @@
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(457, 240);
+            this.button3.Location = new System.Drawing.Point(457, 254);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(133, 36);
             this.button3.TabIndex = 3;
@@ -347,9 +347,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(12, 290);
+            this.button1.Location = new System.Drawing.Point(0, 280);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(88, 33);
+            this.button1.Size = new System.Drawing.Size(75, 38);
             this.button1.TabIndex = 36;
             this.button1.Text = "GERİ";
             this.button1.UseVisualStyleBackColor = true;
@@ -360,7 +360,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Yellow;
-            this.ClientSize = new System.Drawing.Size(943, 456);
+            this.ClientSize = new System.Drawing.Size(951, 475);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.textBox5);

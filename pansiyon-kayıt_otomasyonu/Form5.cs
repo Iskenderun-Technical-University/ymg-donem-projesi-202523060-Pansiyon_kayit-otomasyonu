@@ -52,19 +52,97 @@ namespace pansiyonkayıt_otomasyonu
 
         private void button3_Click(object sender, EventArgs e)
         {
+            if (textBox5.Text =="101")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_101";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
 
-            con = new SqlConnection(SqlCon);
-            con.Open();
-            string sql = "delete from Table_2 where [AdSoyad]=@ad";
-            cmd = new SqlCommand();
-            cmd.Parameters.AddWithValue("@ad", textBox1.Text);
+                con.Close();
 
-            cmd.Connection = con;
-            cmd.CommandText = sql;
-            cmd.ExecuteNonQuery();
+            }
+            if (textBox5.Text == "102")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_102";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
 
-            con.Close();
-            
+                con.Close();
+
+            }
+            if (textBox5.Text == "103")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_103";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+            if (textBox5.Text == "104")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_104";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+            if (textBox5.Text == "105")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_105";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+            if (textBox5.Text == "106")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_106";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
+            if (textBox5.Text == "107")
+            {
+                con = new SqlConnection(SqlCon);
+                con.Open();
+                string sql = "delete from Table_107";
+                cmd = new SqlCommand();
+                cmd.Connection = con;
+                cmd.CommandText = sql;
+                cmd.ExecuteNonQuery();
+
+                con.Close();
+
+            }
 
             textBox1.Clear();
             textBox2.Clear();
@@ -95,7 +173,5 @@ namespace pansiyonkayıt_otomasyonu
         }
 
         
-
-    
     }
 }

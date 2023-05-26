@@ -126,6 +126,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(163, 29);
             this.textBox5.TabIndex = 16;
+            this.textBox5.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // label8
             // 
@@ -255,13 +256,12 @@
             this.groupBox1.Controls.Add(this.button3);
             this.groupBox1.Controls.Add(this.button2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(119, 481);
+            this.groupBox1.Location = new System.Drawing.Point(86, 481);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(871, 185);
+            this.groupBox1.Size = new System.Drawing.Size(904, 185);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "ODA NUMARALARI";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // button10
             // 
@@ -289,9 +289,9 @@
             // button8
             // 
             this.button8.BackColor = System.Drawing.Color.DarkGray;
-            this.button8.Location = new System.Drawing.Point(757, 48);
+            this.button8.Location = new System.Drawing.Point(770, 48);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(85, 50);
+            this.button8.Size = new System.Drawing.Size(107, 50);
             this.button8.TabIndex = 6;
             this.button8.Text = "107";
             this.button8.UseVisualStyleBackColor = false;
@@ -302,7 +302,7 @@
             this.button7.BackColor = System.Drawing.Color.DarkGray;
             this.button7.Location = new System.Drawing.Point(647, 48);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(85, 50);
+            this.button7.Size = new System.Drawing.Size(106, 50);
             this.button7.TabIndex = 5;
             this.button7.Text = "106";
             this.button7.UseVisualStyleBackColor = false;
@@ -311,9 +311,9 @@
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.DarkGray;
-            this.button6.Location = new System.Drawing.Point(533, 48);
+            this.button6.Location = new System.Drawing.Point(530, 48);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 50);
+            this.button6.Size = new System.Drawing.Size(99, 50);
             this.button6.TabIndex = 4;
             this.button6.Text = "105";
             this.button6.UseVisualStyleBackColor = false;
@@ -322,9 +322,9 @@
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.DarkGray;
-            this.button5.Location = new System.Drawing.Point(416, 48);
+            this.button5.Location = new System.Drawing.Point(404, 48);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(85, 50);
+            this.button5.Size = new System.Drawing.Size(97, 50);
             this.button5.TabIndex = 3;
             this.button5.Text = "104";
             this.button5.UseVisualStyleBackColor = false;
@@ -333,9 +333,9 @@
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.DarkGray;
-            this.button4.Location = new System.Drawing.Point(298, 48);
+            this.button4.Location = new System.Drawing.Point(281, 48);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(85, 50);
+            this.button4.Size = new System.Drawing.Size(102, 50);
             this.button4.TabIndex = 2;
             this.button4.Text = "103";
             this.button4.UseVisualStyleBackColor = false;
@@ -344,9 +344,9 @@
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.DarkGray;
-            this.button3.Location = new System.Drawing.Point(177, 48);
+            this.button3.Location = new System.Drawing.Point(159, 48);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 50);
+            this.button3.Size = new System.Drawing.Size(103, 50);
             this.button3.TabIndex = 1;
             this.button3.Text = "102";
             this.button3.UseVisualStyleBackColor = false;
@@ -355,9 +355,9 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.DarkGray;
-            this.button2.Location = new System.Drawing.Point(43, 48);
+            this.button2.Location = new System.Drawing.Point(23, 48);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 50);
+            this.button2.Size = new System.Drawing.Size(111, 50);
             this.button2.TabIndex = 0;
             this.button2.Text = "101";
             this.button2.UseVisualStyleBackColor = false;
@@ -366,7 +366,7 @@
             // button11
             // 
             this.button11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.Location = new System.Drawing.Point(22, 567);
+            this.button11.Location = new System.Drawing.Point(3, 616);
             this.button11.Name = "button11";
             this.button11.Size = new System.Drawing.Size(77, 50);
             this.button11.TabIndex = 2;
