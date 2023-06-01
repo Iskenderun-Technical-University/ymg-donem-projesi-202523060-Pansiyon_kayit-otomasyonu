@@ -72,5 +72,16 @@ namespace pansiyonkayıt_otomasyonu
             this.Close();
             Application.Exit();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            label4.Text = DateTime.Now.ToLongDateString();
+            label5.Text = DateTime.Now.ToLongTimeString();
+        }
     }
 }

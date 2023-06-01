@@ -58,5 +58,12 @@ namespace pansiyonkayıt_otomasyonu
             this.Hide();
             a.Show();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form7 a = new Form7();
+            this.Hide();
+            a.Show();
+        }
     }
 }

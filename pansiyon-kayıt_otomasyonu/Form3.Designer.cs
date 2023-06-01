@@ -34,13 +34,15 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(354, 49);
+            this.button1.ForeColor = System.Drawing.Color.Yellow;
+            this.button1.Location = new System.Drawing.Point(374, 49);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(143, 101);
             this.button1.TabIndex = 0;
@@ -50,11 +52,12 @@
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button2.BackColor = System.Drawing.Color.DarkGray;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(514, 49);
+            this.button2.ForeColor = System.Drawing.Color.Yellow;
+            this.button2.Location = new System.Drawing.Point(582, 49);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 101);
+            this.button2.Size = new System.Drawing.Size(143, 101);
             this.button2.TabIndex = 1;
             this.button2.Text = "ÇIKIŞ";
             this.button2.UseVisualStyleBackColor = false;
@@ -62,11 +65,12 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button3.BackColor = System.Drawing.Color.DarkGray;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(668, 49);
+            this.button3.ForeColor = System.Drawing.Color.Yellow;
+            this.button3.Location = new System.Drawing.Point(791, 49);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(133, 101);
+            this.button3.Size = new System.Drawing.Size(143, 101);
             this.button3.TabIndex = 2;
             this.button3.Text = "ŞİFRE DEĞİŞTİR";
             this.button3.UseVisualStyleBackColor = false;
@@ -74,9 +78,10 @@
             // 
             // button4
             // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button4.BackColor = System.Drawing.Color.DarkGray;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(354, 186);
+            this.button4.ForeColor = System.Drawing.Color.Yellow;
+            this.button4.Location = new System.Drawing.Point(374, 201);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(143, 114);
             this.button4.TabIndex = 3;
@@ -86,9 +91,10 @@
             // 
             // button5
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
+            this.button5.BackColor = System.Drawing.Color.DarkGray;
             this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(514, 186);
+            this.button5.ForeColor = System.Drawing.Color.Yellow;
+            this.button5.Location = new System.Drawing.Point(582, 201);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(143, 114);
             this.button5.TabIndex = 4;
@@ -96,14 +102,28 @@
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.DarkGray;
+            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button6.ForeColor = System.Drawing.Color.Yellow;
+            this.button6.Location = new System.Drawing.Point(791, 201);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(143, 114);
+            this.button6.TabIndex = 5;
+            this.button6.Text = "MUHASEBE";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Yellow;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(894, 452);
+            this.ClientSize = new System.Drawing.Size(946, 406);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
@@ -124,5 +144,6 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button6;
     }
 }
