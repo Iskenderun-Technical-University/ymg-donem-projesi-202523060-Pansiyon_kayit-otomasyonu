@@ -23,7 +23,29 @@ namespace pansiyonkayıt_otomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 fr = new Form3();
+            this.Hide();
+            fr.Show();
+        }
+
+        private void Form7_Load(object sender, EventArgs e)
+        {
             baglanti.Open();
+            SqlCommand komut = new SqlCommand("select sum(Ucret)as toplam from Table_2", baglanti);
+            SqlDataReader oku = komut.ExecuteReader();
+            while (oku.Read())
+            {
+                label8.Text = oku["toplam"].ToString();
+            }
+            baglanti.Close();
+            int personel;
+            personel = Convert.ToInt16(textBox1.Text);
+            label10.Text = (personel * 1500).ToString();
         }
     }
 }

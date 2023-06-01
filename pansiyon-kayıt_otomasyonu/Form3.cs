@@ -54,7 +54,7 @@ namespace pansiyonkayıt_otomasyonu
 
         private void button5_Click(object sender, EventArgs e)
         {
-            Form6 a = new Form6();
+            Form8 a = new Form8();
             this.Hide();
             a.Show();
         }
@@ -62,6 +62,13 @@ namespace pansiyonkayıt_otomasyonu
         private void button6_Click(object sender, EventArgs e)
         {
             Form7 a = new Form7();
+            this.Hide();
+            a.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Form6 a = new Form6();
             this.Hide();
             a.Show();
         }
