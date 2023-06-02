@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\pansiyon-kayit_otomasyonu",
+    "\\pansiyon-kayit_otomasyonu\\bin",
+    "\\pansiyon-kayit_otomasyonu\\obj",
+    "\\pansiyon-kayit_otomasyonu\\Properties"
   ],
-  "SelectedNode": "\\YmgOtomasyon.sln",
+  "SelectedNode": "\\pansiyon-kayit_otomasyonu\\Form1.cs",
   "PreviewInSolutionExplorer": false
 }
