@@ -46,24 +46,34 @@ namespace pansiyonkayıt_otomasyonu
             dr = cmd.ExecuteReader();
             if (dr.Read())
             {
-                con = new SqlConnection(SqlCon);
-                string Sql = "update Table_1 set [AdminSifre]='" + textBox2.Text+ "'";
-                cmd = new SqlCommand();
-                con.Open();
-                cmd.Connection = con;
-                cmd.CommandText = Sql;
-                cmd.ExecuteNonQuery();
-                con.Close();
-                GridDoldur();
-                MessageBox.Show("sifre basarıyla dedistirildi....");
-                textBox1.Clear();
-                textBox2.Clear();
-                textBox3.Clear();
-                Form1 fr = new Form1();
-                this.Hide();
-                fr.Show();
+                if (textBox2.Text == textBox3.Text)
+                {
+                    con = new SqlConnection(SqlCon);
+                    string Sql = "update Table_1 set [AdminSifre]='" + textBox2.Text + "'";
+                    cmd = new SqlCommand();
+                    con.Open();
+                    cmd.Connection = con;
+                    cmd.CommandText = Sql;
+                    cmd.ExecuteNonQuery();
+                    con.Close();
+                    GridDoldur();
+                    MessageBox.Show("sifre basarıyla dedistirildi....");
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox3.Clear();
+                    Form1 fr = new Form1();
+                    this.Hide();
+                    fr.Show();
 
-
+                }
+                else
+                {
+                    MessageBox.Show("yeni sifre ve tekrarı uyuşmuyor!");
+                    textBox1.Clear();
+                    textBox2.Clear();
+                    textBox3.Clear();
+                }
+                
 
             }
             else
