@@ -59,8 +59,12 @@ namespace pansiyonkayıt_otomasyonu
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
+                Form1 fr = new Form1();
+                this.Hide();
+                fr.Show();
 
-                
+
+
             }
             else
             {
@@ -73,14 +77,7 @@ namespace pansiyonkayıt_otomasyonu
             con.Close();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form3 fr = new Form3();
-            this.Hide();
-            fr.Show();
-
-
-        }
+       
 
         private void button2_Click(object sender, EventArgs e)
         {

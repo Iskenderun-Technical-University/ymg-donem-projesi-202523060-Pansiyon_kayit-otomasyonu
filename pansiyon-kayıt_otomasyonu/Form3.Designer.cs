@@ -125,7 +125,7 @@
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(143, 102);
             this.button7.TabIndex = 6;
-            this.button7.Text = "Odaları görüntüle";
+            this.button7.Text = "ODALAR";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 

@@ -59,6 +59,10 @@ namespace pansiyonkayıt_otomasyonu
 
 
         }
+
+       
+
+
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -83,5 +87,7 @@ namespace pansiyonkayıt_otomasyonu
             label4.Text = DateTime.Now.ToLongDateString();
             label5.Text = DateTime.Now.ToLongTimeString();
         }
+
+      
     }
 }
