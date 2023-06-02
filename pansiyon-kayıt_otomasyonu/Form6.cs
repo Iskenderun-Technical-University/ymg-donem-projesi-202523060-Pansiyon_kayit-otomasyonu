@@ -47,7 +47,7 @@ namespace pansiyonkayıt_otomasyonu
             SqlDataReader oku2 = komut2.ExecuteReader();
             while (oku2.Read())
             {
-                button1.Text = oku2["AdSoyad"].ToString();
+                button2.Text = oku2["AdSoyad"].ToString();
             }
             baglanti.Close();
             if (button2.Text != "102")
@@ -132,6 +132,9 @@ namespace pansiyonkayıt_otomasyonu
 
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

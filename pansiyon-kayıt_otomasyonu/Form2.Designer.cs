@@ -389,7 +389,7 @@
             this.Controls.Add(this.groupBox);
             this.DoubleBuffered = true;
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "KAYIT";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.groupBox.ResumeLayout(false);
             this.groupBox.PerformLayout();

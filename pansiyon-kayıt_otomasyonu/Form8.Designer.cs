@@ -36,7 +36,20 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.button3 = new System.Windows.Forms.Button();
+            this.listView2 = new System.Windows.Forms.ListView();
+            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -46,19 +59,6 @@
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.listView2 = new System.Windows.Forms.ListView();
-            this.columnHeader5 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader6 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader7 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -148,6 +148,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "FATURALAR:";
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(93, 67);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(47, 25);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "AY:";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(172, 63);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 29);
+            this.textBox8.TabIndex = 23;
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(151, 288);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(142, 35);
+            this.button3.TabIndex = 22;
+            this.button3.Text = "EKLE";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // listView2
+            // 
+            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader5,
+            this.columnHeader6,
+            this.columnHeader7,
+            this.columnHeader8});
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(0, 339);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(459, 176);
+            this.listView2.TabIndex = 21;
+            this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader5
+            // 
+            this.columnHeader5.Text = "AY";
+            this.columnHeader5.Width = 81;
+            // 
+            // columnHeader6
+            // 
+            this.columnHeader6.Text = "ELEKTRİK";
+            this.columnHeader6.Width = 140;
+            // 
+            // columnHeader7
+            // 
+            this.columnHeader7.Text = "SU";
+            this.columnHeader7.Width = 125;
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "İNTERNET";
+            this.columnHeader8.Width = 109;
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.listView1);
@@ -166,6 +231,41 @@
             this.groupBox2.TabIndex = 18;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "MUTFAK GİDERLERİ:";
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(6, 339);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(566, 176);
+            this.listView1.TabIndex = 20;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Text = "AY";
+            this.columnHeader1.Width = 131;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "GIDA";
+            this.columnHeader2.Width = 194;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "İÇECEK";
+            this.columnHeader3.Width = 147;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "ÇEREZ";
+            this.columnHeader4.Width = 549;
             // 
             // button1
             // 
@@ -251,106 +351,6 @@
             this.textBox1.Size = new System.Drawing.Size(243, 29);
             this.textBox1.TabIndex = 10;
             // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(6, 339);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(566, 176);
-            this.listView1.TabIndex = 20;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "AY";
-            this.columnHeader1.Width = 131;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "GIDA";
-            this.columnHeader2.Width = 194;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "İÇECEK";
-            this.columnHeader3.Width = 147;
-            // 
-            // columnHeader4
-            // 
-            this.columnHeader4.Text = "ÇEREZ";
-            this.columnHeader4.Width = 549;
-            // 
-            // listView2
-            // 
-            this.listView2.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader5,
-            this.columnHeader6,
-            this.columnHeader7,
-            this.columnHeader8});
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(0, 339);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(459, 176);
-            this.listView2.TabIndex = 21;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            this.listView2.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader5
-            // 
-            this.columnHeader5.Text = "AY";
-            this.columnHeader5.Width = 81;
-            // 
-            // columnHeader6
-            // 
-            this.columnHeader6.Text = "ELEKTRİK";
-            this.columnHeader6.Width = 140;
-            // 
-            // columnHeader7
-            // 
-            this.columnHeader7.Text = "SU";
-            this.columnHeader7.Width = 125;
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(151, 288);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(142, 35);
-            this.button3.TabIndex = 22;
-            this.button3.Text = "EKLE";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(172, 63);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 29);
-            this.textBox8.TabIndex = 23;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(93, 67);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(47, 25);
-            this.label8.TabIndex = 24;
-            this.label8.Text = "AY:";
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "İNTERNET";
-            this.columnHeader8.Width = 109;
-            // 
             // Form8
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -361,7 +361,7 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button2);
             this.Name = "Form8";
-            this.Text = "Form8";
+            this.Text = "MASRAFLAR";
             this.Load += new System.EventHandler(this.Form8_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

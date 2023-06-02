@@ -167,7 +167,7 @@
             this.Controls.Add(this.button1);
             this.DoubleBuffered = true;
             this.Name = "Form1";
-            this.Text = "ADMİN GİRİŞ";
+            this.Text = "GİRİS";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -76,7 +76,41 @@ namespace pansiyonkayıt_otomasyonu
                 label14.Text = oku3["toplam"].ToString();
             }
             baglanti.Close();
+            //elektrik faturası
+            baglanti.Open();
+            SqlCommand komut4 = new SqlCommand("select sum(elektrik)as toplam from Table_4", baglanti);
+            SqlDataReader oku4 = komut4.ExecuteReader();
+            while (oku4.Read())
+            {
+                label11.Text = oku4["toplam"].ToString();
+            }
+            baglanti.Close();
+            //su faturası
+            baglanti.Open();
+            SqlCommand komut5 = new SqlCommand("select sum(su)as toplam from Table_4", baglanti);
+            SqlDataReader oku5 = komut5.ExecuteReader();
+            while (oku5.Read())
+            {
+                label15.Text = oku5["toplam"].ToString();
+            }
+            baglanti.Close();
+            //internet faturası
+            baglanti.Open();
+            SqlCommand komut6 = new SqlCommand("select sum(internet)as toplam from Table_4", baglanti);
+            SqlDataReader oku6 = komut6.ExecuteReader();
+            while (oku6.Read())
+            {
+                label16.Text = oku6["toplam"].ToString();
+            }
+            baglanti.Close();
+        }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int sonuc;
+            sonuc = Convert.ToInt32(label8.Text) - (Convert.ToInt16(label10.Text)+ Convert.ToInt16(label9.Text)+ Convert.ToInt16(label12.Text)+ Convert.ToInt16(label14.Text)+ Convert.ToInt16(label11.Text)+ Convert.ToInt16(label15.Text)+ Convert.ToInt16(label16.Text));
+            label13.Text = sonuc.ToString();
+            
         }
     }
 }

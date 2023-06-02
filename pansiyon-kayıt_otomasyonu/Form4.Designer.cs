@@ -133,9 +133,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.ForeColor = System.Drawing.Color.Yellow;
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form4";
-            this.Text = "Form4";
+            this.Text = "SİFRE DEGİSTİR";
             this.ResumeLayout(false);
             this.PerformLayout();
 
