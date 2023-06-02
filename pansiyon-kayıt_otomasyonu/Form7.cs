@@ -23,7 +23,10 @@ namespace pansiyonkayıt_otomasyonu
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            int personel;
+            personel = Convert.ToInt16(textBox1.Text);
+            label10.Text = (personel * 1500).ToString();
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -43,9 +46,37 @@ namespace pansiyonkayıt_otomasyonu
                 label8.Text = oku["toplam"].ToString();
             }
             baglanti.Close();
-            int personel;
-            personel = Convert.ToInt16(textBox1.Text);
-            label10.Text = (personel * 1500).ToString();
+
+            //gıda giderleri
+            baglanti.Open();
+            SqlCommand komut1 = new SqlCommand("select sum(Gıda)as toplam from Table_3", baglanti);
+            SqlDataReader oku1 = komut1.ExecuteReader();
+            while (oku1.Read())
+            {
+                label9.Text = oku1["toplam"].ToString();
+            }
+            baglanti.Close();
+
+            //icecek giderleri
+            baglanti.Open();
+            SqlCommand komut2 = new SqlCommand("select sum(içecek)as toplam from Table_3", baglanti);
+            SqlDataReader oku2 = komut2.ExecuteReader();
+            while (oku2.Read())
+            {
+                label12.Text = oku2["toplam"].ToString();
+            }
+            baglanti.Close();
+
+            //cerez giderleri
+            baglanti.Open();
+            SqlCommand komut3 = new SqlCommand("select sum(çerezler)as toplam from Table_3", baglanti);
+            SqlDataReader oku3 = komut3.ExecuteReader();
+            while (oku3.Read())
+            {
+                label14.Text = oku3["toplam"].ToString();
+            }
+            baglanti.Close();
+
         }
     }
 }

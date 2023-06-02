@@ -201,7 +201,7 @@ namespace pansiyonkayıt_otomasyonu
 
             TimeSpan Sonuc = buyukTarih - kucukTarih;
             label9.Text = Sonuc.TotalDays.ToString();
-            Ucret = Convert.ToInt32(label9.Text) * 50;//gunluk pansiyon fiyatı 50 tl olsun.
+            Ucret = Convert.ToInt32(label9.Text) * 50;
             textBox4.Text = Ucret.ToString();
         }
 
